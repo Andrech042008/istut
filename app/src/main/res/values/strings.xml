@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">YoutubeApi</string>
+    <string name="headerText"><![CDATA[Emotional Well-being & Healing Practices for Children]]></string>
+    <string name="internet_connection">internet_connection</string>
+    <string name="no_internet_connection">No Internet Connection</string>
+    <string name="try_again">Try again</string>
+    <string name="_32_video_series">32 video series</string>
+    <string name="playlist">playlist</string>
+    <string name="description">In this series, we break down the impact of displacement, instability, violence, and trauma in children, and offer exercises to support children in their healing journey.</string>
+    <string name="play">Playlist</string>
+    <string name="back">Back</string>
+    <string name="under_text"><![CDATA[HOW DISPLACEMENT INSTABILITY & UNCERTAINTY AFFECT CHILDREN]]></string>
+    <string name="download">Download</string>
+    <string name="desc_video">Refugee children often have suffered many losses and because of that, they are grieving these losses they\'re grieving the loss of their home, the loss of the life they knew, the places where they were used to be and that they loved to go. The loss of their friends, and certainly the loss of their family members and loved ones. So naturally they\'re going to have sadness.</string>
+    <string name="video_series">video series</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="how_long_video">4:12</string>
+    <string name="series">video series</string>
+</resources>

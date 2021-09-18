@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.player.PlayerActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:backgroundTint="@color/white"
+        app:layout_collapseMode="pin"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize">
+
+            <RelativeLayout
+                android:id="@+id/back_container"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/arrow_back"
+                    android:layout_width="12dp"
+                    android:layout_height="21dp"
+                    android:layout_marginTop="17dp"
+                    android:src="@drawable/arrow_back" />
+
+                <TextView
+                    android:id="@+id/tv_back"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_toEndOf="@+id/arrow_back"
+                    android:fontFamily="@font/font_back"
+                    android:text="@string/back"
+                    android:textColor="#FF0000"
+                    android:textSize="18sp" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tv_playlist_red"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:fontFamily="@font/pro_display"
+                android:text="@string/play"
+                android:textColor="#FF0000"
+                android:textSize="20sp" />
+        </RelativeLayout>
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <com.google.android.exoplayer2.ui.PlayerView
+        android:id="@+id/exo_player"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_below="@+id/toolbar" />
+
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="90dp"
+        android:visibility="gone" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/exo_player"
+        android:layout_marginStart="16sp"
+        android:layout_marginTop="26dp"
+        android:layout_marginEnd="16sp"
+        android:fontFamily="@font/fjalla_one"
+        android:text="@string/under_text"
+        android:textColor="#333333"
+        android:textSize="20sp" />
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/card_view"
+        android:layout_width="142dp"
+        android:layout_height="41dp"
+        android:layout_below="@+id/tv_title"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="11dp"
+        app:cardCornerRadius="10dp"
+        app:strokeColor="#FF0000"
+        app:strokeWidth="1dp">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="16sp"
+            android:fontFamily="@font/nato_sans"
+            android:text="@string/download"
+            android:textColor="#FF0000"
+            android:textSize="16sp" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="34dp"
+            android:layout_height="34dp"
+            android:layout_gravity="end"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="8dp"
+            android:src="@drawable/ic_circle_" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginTop="14dp"
+            android:layout_marginEnd="18dp"
+            android:src="@drawable/ic_file_download" />
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_desc"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_below="@+id/card_view"
+        android:layout_marginStart="16sp"
+        android:layout_marginTop="16sp"
+        android:layout_marginEnd="16sp"
+        android:fontFamily="@font/nato_sans"
+        android:text="@string/desc_video"
+        android:textSize="18sp" />
+
+</RelativeLayout>
